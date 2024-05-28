@@ -1,0 +1,582 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #FAEBD7;
+  overflow-x: hidden;
+}
+
+header{
+  background-color: #A52A2A;
+  box-shadow: 0px 4px 8px brown;
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+
+nav{
+  display:  flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+nav h1{
+  font-family: "roboto";
+  font-weight: 900;
+  font-size: 1.7em;
+  text-align:left;
+  letter-spacing: 2px;
+}
+
+.lo-h1{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.logo{
+  width: 60px;
+  background-color: transparent;
+  color: transparent;
+}
+
+.res-sec{
+  display:  flex;
+  justify-content: center;
+}
+.menu-icons{
+  display: none;
+}
+.responsive{
+  background-color: brown;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5),  -3px -3px 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  line-height: 4rem;
+  border-radius: 10px;
+  display: none;
+}
+
+.ul-large{
+  display:  flex;
+  gap: 4em;
+}
+
+li{
+  list-style: none;
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+  font-family: "monospace";
+  font-size: 1.3rem;
+}
+
+.p-icons{
+  font-size: 2em;
+  color:  black;
+}
+
+.showcase-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.show-f-child{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 10px;
+}
+
+.show-f-child h1{
+  font-family: "roboto";
+  font-size: 3.5em;
+  font-weight: 900;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  animation-name: h1-animation;
+}
+
+@keyframes h1-animation{
+  to{
+    translate: 100px;
+  }
+}
+
+.qu{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.show-end{
+  margin-top: 30px;
+}
+
+.show-last{
+ padding: 20px;
+ margin: 20px;
+ background-color: brown;
+ /* position: relative; */
+}
+
+.show-case-img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.animate-poto{
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 250px;
+  margin-left: 200px;
+  animation-name: image-scroll;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+@keyframes image-scroll {
+  to{
+    margin-top: 500px;
+  }
+}
+
+.campus{
+  background-color: #e97777;
+  padding: 30px;
+}
+
+.campus-h1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.campus-h1 h1{
+  text-align: center;
+  font-size: 7.5em;
+  font-family: "roboto";
+  position: relative;
+  color: rgba(214, 212, 212, 0.5);
+}
+
+.campus h1::after{
+  content: 'School Campus';
+  position: absolute;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  font-family: "roboto";
+  margin-top: 45px;
+  color: brown;
+  text-align:center;
+  top: 0;
+  left: 0; 
+  right: 0;
+}
+
+.campus-img{
+  width: 300px;
+}
+
+.main-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 20px;
+}
+
+.campus-card{
+  background-color: #e97777;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+
+.campus-card:hover{
+  scale: 0.9;
+}
+
+.why-section{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 45px 55px;
+}
+
+.card-card{
+  background-color: #A52A2A;
+  border: 5px solid brown;
+  border-radius: 5px;
+  width: 300px;
+  height: 200px;
+}
+
+
+.why-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(3,1fr); */
+  margin: 0 auto;
+  gap: 2.5rem;
+  margin-top: 40px;
+}
+
+.h-why{
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: 'roboto';
+  margin-top: 20px;
+}
+
+.testimonial{
+  padding: 50px;
+  background-color: brown;
+}
+
+.testimonial-sec{
+  max-width: 1100px;
+}
+
+.h-section{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.h-testimonial{
+  font-size: 5rem;
+  font-family: "roboto";
+  text-transform: uppercase;
+  color: #e97777;
+  text-align: center;
+  position: relative;
+}
+
+.h-testimonial::after{
+  content: 'Testimonials';
+  position: absolute;
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 30px;
+  color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.t-p-card{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 40px;
+}
+
+.data{
+  border-radius: 10px;
+  border: 2px solid #e97777;
+  padding: 20px;
+  color: white;
+}
+
+
+.data:hover{
+  background-color: rgba(180, 94, 94, 0.9);
+  scale: 1;
+}
+
+.data h1{
+  margin-bottom: 5px;
+}
+
+.data >p{
+ margin-bottom: 20px;
+}
+
+.star{
+  color: orange;
+  margin: 5px;
+}
+
+.choose-head{
+  font-size: 1.7rem;
+  font-weight: bolder;
+  font-family: 'roboto';
+}
+ footer{
+  padding: 30px;
+  padding-bottom: 20px;
+ }
+
+ .footer-con{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+ }
+
+ /* contact page */
+
+ .c-content{
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+ }
+ .f-and-m-sec{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-top: 20px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3), -4px -4px 4px rgba(0, 0, 0, 0.2);
+ }
+
+ .us{
+  color: #A52A2A;
+ }
+
+ form p >{
+  margin-bottom: 10px;
+ }
+
+ input[type='name'],
+ input[type='email'],
+ textarea{
+  width: 100%;
+  padding: 5px;
+  border: 2px solid brown;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 10px;
+ }
+
+ textarea{
+  height: 150px;
+ }
+
+ button[type="submit"]{
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: brown;
+  color: white;
+ }
+
+ .contact-others{
+  background-color: #e97777;
+  margin-top: 30px;
+  padding: 20px;
+ }
+
+ .others-c{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 4rem;
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2),-3px -3px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+ }
+
+.others-c div{
+  padding: 20px;
+}
+
+
+.icons{
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: brown;
+}
+
+/* About page */
+
+.about-content{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-content h1{
+  margin-top: 17px;
+}
+
+.about-hero{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3rem;
+}
+
+.about-hero h1{
+  margin-bottom: 10px;
+}
+
+.about-hero img{
+  border-radius: 50%;
+}
+
+.vi-and-mi{
+  background-color: #e97777;
+  padding: 20px;
+}
+
+.misvis{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2), -3px -3px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  line-height: 1.4rem;
+}
+.misvis h1{
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 2rem;
+  font-family: 'roboto';
+}
+
+.pen-icon{
+  font-size: 3rem;
+  color: #A52A2A;
+}
+
+.book-icon{
+  font-size: 3rem;
+  color: #A52A2A;
+}
+
+@media (max-width:768px){
+  nav .ul-large{
+   display: none;
+  }
+  .responsive{
+    display: block;
+  }
+  .menu-icons{
+    display: block;
+  }
+  .show-case-img{
+    height: 50vh;
+  }
+
+  .showcase-container{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .animate-poto{
+    margin-left: 100px;
+  }
+
+  .t-p-card{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .why-card{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .f-and-m-sec{
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .others-c{
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .about-hero{
+    grid-template-columns: auto;
+  }
+
+  .misvis{
+    flex-wrap: wrap
+  }
+
+}
+
+@media (max-width:500px){
+  @keyframes image-scroll {
+    to{
+      margin-top: 300px;
+    }
+  }
+  .show-f-child h1{
+    font-size: 2.5em;
+  }
+
+  .show-case-img{
+    height: 100%;
+  }
+  .campus h1{
+    font-size: 6rem;
+  }
+
+  .campus h1::after{
+    content: 'School Campus';
+    position: absolute;
+    font-size: 2.7rem;
+    font-weight: bolder;
+    font-family: "roboto";
+    margin-top: 30px;
+    color: brown;
+    text-align:center;
+    top: 0;
+    left: 0; 
+    right: 0;
+  }
+
+  .h-why{
+    font-size: 2rem;
+  }
+
+  .h-testimonial{
+    font-size: 2.6rem;
+  }
+  .h-testimonial::after{
+    margin-top: 7px;
+    /* font-size: 1.8rem; */
+  }
+
+  .t-p-card{
+    grid-template-columns: auto;
+  }
+
+  .why-card{
+    grid-template-columns: auto;
+  }
+
+}
