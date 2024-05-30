@@ -1,4 +1,5 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom"
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import Layout from "../layout/Layout"
 import Home from "./Pages/Home/Home"
 import About from "./Pages/About/About"

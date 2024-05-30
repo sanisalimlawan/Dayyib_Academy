@@ -25,7 +25,7 @@ export default function Layout(){
                             <NavLink to='Contact'>Contact</NavLink>
                         </li>
                         <li>
-                            <NavLink to='gallery'>Academic</NavLink>
+                            <NavLink to='gallery'>Admissions</NavLink>
                         </li>
                     </ul>
                 </div>
@@ -50,7 +50,7 @@ export default function Layout(){
                             <NavLink to='Contact'>Contact</NavLink>
                         </li>
                         <li>
-                            <NavLink to='gallery'>Academic</NavLink>
+                            <NavLink to='gallery'>Admissions</NavLink>
                         </li>
                     </ul>
                 </div>

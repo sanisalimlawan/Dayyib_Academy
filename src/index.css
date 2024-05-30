@@ -10,6 +10,8 @@
 body{
   background-color: #FAEBD7;
   overflow-x: hidden;
+  font-family:  'Roboto';
+  font-weight: 400;
 }
 
 header{
@@ -370,10 +372,16 @@ li a{
  textarea{
   width: 100%;
   padding: 5px;
-  border: 2px solid brown;
+  border: none;
   border-radius: 5px;
   outline: none;
   margin-bottom: 10px;
+ }
+
+ input[type='name']:focus,
+ input[type='email']:focus,
+ textarea:focus{
+  border: 2px solid brown;
  }
 
  textarea{
@@ -418,6 +426,44 @@ li a{
   color: brown;
 }
 
+.facebook{
+  font-size: 1.7rem;
+  color: blue;
+}
+
+.whatsapp{
+  font-size: 1.7rem;
+  color: rgb(138, 214, 23);
+}
+
+.twiter{
+  font-size: 1.5rem;
+  color: black;
+}
+
+.instagram{
+  font-size: 1.5rem;
+  color: #A52A2A;
+}
+
+.icon{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.icon:hover{
+  background-color: #e97777;
+}
+
+
+.follow{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 0.3rem;
+}
+
 /* About page */
 
 .about-content{
@@ -434,6 +480,7 @@ li a{
   display: grid;
   grid-template-columns: auto auto;
   gap: 3rem;
+  margin-bottom: 30px;
 }
 
 .about-hero h1{
@@ -542,13 +589,13 @@ li a{
     height: 100%;
   }
   .campus h1{
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .campus h1::after{
     content: 'School Campus';
     position: absolute;
-    font-size: 2.7rem;
+    font-size: 2rem;
     font-weight: bolder;
     font-family: "roboto";
     margin-top: 30px;
@@ -564,11 +611,11 @@ li a{
   }
 
   .h-testimonial{
-    font-size: 2.6rem;
+    font-size: 2.3rem;
   }
   .h-testimonial::after{
     margin-top: 7px;
-    /* font-size: 1.8rem; */
+    font-size: 1.8rem;
   }
 
   .t-p-card{
@@ -577,6 +624,16 @@ li a{
 
   .why-card{
     grid-template-columns: auto;
+  }
+
+  .footer-con{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .follow{
+    margin-top: 20px;
   }
 
 }

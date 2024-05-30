@@ -1,4 +1,8 @@
+
 import lower from '../../../img/student-1.jpg'
+
+
+
 
 export default function Campus(){
     return(
@@ -7,9 +11,20 @@ export default function Campus(){
             <h1>SCHOOL</h1>
             </div>
             <div className='main-card'> 
-            <Card name='Lower'img={lower} />
-            <Card name='Middle'img={lower} />
-            <Card name='Intermidete'img={lower} />
+        
+            <Card name='Nursery'img={lower} />
+            
+        
+            <Card name='Primary'img={lower} />
+            
+        
+            <Card name='Secondry'img={lower} />
+            
+        
+            {/* <Card name='Islamiyya' img={lower} /> */}
+            
+            
+
             </div>
         </main>
     )

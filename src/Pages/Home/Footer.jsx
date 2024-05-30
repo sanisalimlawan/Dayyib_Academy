@@ -1,5 +1,6 @@
-import { FaFacebook } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa6";
+import { FaFacebook, FaTwitter, FaTwitterSquare } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function Footer(){
     return(
@@ -10,8 +11,11 @@ export default function Footer(){
                     <div>
                     &copy; Dayyib Academy 2024 All Rights Reserved. 
                     </div>
-                    <div>
-                        Follow us <span className="whatsapp icon"><FaWhatsapp /></span> <span className="facebook icon"><FaFacebook /></span> 
+                    <div className="follow">
+                     <span className="icon"> <Link to='/'><FaWhatsapp className="whatsapp"/></Link> </span>
+                      <span className=" icon"> <Link to='/'><FaFacebook className="facebook" /></Link> </span> 
+                      <span className="icon"> <Link to='/'><FaXTwitter className="twiter" /></Link> </span>
+                      <span className="icon"> <Link to='/'><FaInstagram className="instagram"/></Link></span>
                     </div>
                 </div>
             </div>
